@@ -1,6 +1,7 @@
 <h1 align=center>Hydrogen Nextjs</h1>
 <p align=center>Hydrogen is a minimal & highly customizable free NextJs personal blog template ideal for creating personal blog website.</p>
-<h2 align="center"> <a target="_blank" href="https://hydrogen-nextjs.vercel.app/" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fhydrogen-nextjs.vercel.app%2F&form_factor=desktop">Page Speed (100%)</a>
+<h2 align="center">
+  <a target="_blank" href="https://asyncjake.github.io/hydrogen-nextjs" rel="nofollow">Demo</a>
 </h2>
 
 <p align=center>
@@ -23,14 +24,13 @@
 
 - Google Page Speed score 100! (Desktop)
 - Supports Contact Form
-- Disqus Comment Support 
-- Related Posts Suggestion 
+- Related Posts Suggestion (WIP)
 - MDX Support with many built-in custom components
 - Semantic HTML Document Structure
 - Custom Logo Support
 - Includes All SCSS Files
-- Taxonomy Page Support 
-- Images Optimized With Next/image
+- Taxonomy Page Support
+- Images Optimized With Next/image when appropriate
 
 <!-- installation -->
 ## Installation

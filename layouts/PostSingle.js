@@ -4,7 +4,6 @@ import { readingTime } from "@lib/utils/readingTime";
 import { similerItems } from "@lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@lib/utils/textConverter";
 import shortcodes from "@shortcodes/all";
-import { DiscussionEmbed } from "disqus-react";
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import Link from "next/link";
@@ -83,13 +82,6 @@ const PostSingle = ({ post, mdxContent, slug, posts }) => {
                   <MDXRemote {...mdxContent} components={shortcodes} />
                 </div>
               </article>
-
-              {config.disqus.enable && (
-                <DiscussionEmbed
-                  shortname={config.disqus.shortname}
-                  config={config.disqus.settings}
-                />
-              )}
             </div>
           </div>
 

@@ -21,10 +21,13 @@
 // social icon style
 .social-share {
   @apply space-x-4;
+
   li {
     @apply inline-block;
+
     a {
       @apply block h-9 w-9 rounded-full border bg-primary text-center text-dark;
+
       svg {
         @apply m-auto h-9;
       }
@@ -37,12 +40,12 @@
   li {
     @apply mx-3;
   }
+
   a {
     @apply text-2xl text-dark;
 
     svg {
-      @apply transition
-       duration-200 ease-in-out hover:scale-125;
+      @apply transition duration-200 ease-in-out hover:scale-125;
     }
   }
 }
@@ -60,7 +63,7 @@
   @apply prose-hr:border-[#cbcbcb42]/25;
   @apply prose-p:text-text;
   @apply prose-img:rounded-lg;
-  @apply prose-blockquote:rounded prose-blockquote:border-primary prose-blockquote:bg-[rgba(97,238,188,4%)] prose-blockquote:py-8 prose-blockquote:px-8 prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:leading-9 prose-blockquote:text-dark;
+  @apply prose-blockquote:rounded prose-blockquote:border-primary prose-blockquote:bg-[#61eebc] prose-blockquote:py-8 prose-blockquote:px-8 prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:leading-9 prose-blockquote:text-dark;
   @apply prose-code:inline-block prose-code:rounded-sm prose-code:px-4 prose-code:pb-4;
   @apply prose-strong:text-text;
   @apply prose-a:text-primary;
@@ -96,41 +99,12 @@
   @apply bg-[#242e38];
 }
 
-//gallery
-.gallery {
-  &-item {
-    margin-top: 30px;
-  }
-  &-img {
-    @apply h-full object-cover;
-  }
-
-  .ReactGridGallery_tile {
-    @apply m-2.5 flex-grow bg-transparent #{!important};
-
-    &:hover {
-      @apply cursor-zoom-in;
-
-      img {
-        @apply scale-105;
-      }
-    }
-  }
-
-  .ReactGridGallery_tile-viewport {
-    img {
-      @apply w-full rounded-none object-cover transition-all duration-300;
-      @apply cursor-zoom-in #{!important};
-    }
-  }
-}
-
 //notice
 .notice {
   @apply border-t-[30px] text-dark;
 
   &.note {
-    @apply border-[#97d6ff] bg-[rgba(151,214,255,.15)];
+    @apply border-[#97d6ff] bg-[#97d6ff26];
   }
 
   p {
@@ -138,14 +112,14 @@
   }
 
   &.tip {
-    @apply border-[#96ff96] bg-[rgba(150,255,150,.15)];
+    @apply border-[#96ff96] bg-[#96ff9626];
   }
 
   &.info {
-    @apply border-[#ffc392cc] bg-[rgba(255,195,146,.15)];
+    @apply border-[#ffc392cc] bg-[#ffc39226];
   }
 
   &.warning {
-    @apply border-[#ff918ccc] bg-[rgba(255,145,140,.15)];
+    @apply border-[#ff918ccc] bg-[#ff918c26];
   }
 }
