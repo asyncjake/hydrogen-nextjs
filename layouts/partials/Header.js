@@ -1,4 +1,4 @@
-import menu from "@config/menu.json";
+import menu from "@/config/menu.json";
 import { useHeaderContext } from "context/state";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -91,9 +91,8 @@ const Header = () => {
 
           <ul
             id="nav-menu"
-            className={`navbar-nav order-3 ${
-              !openMenu && "hidden"
-            } w-full justify-center md:flex md:w-auto md:space-x-2 md:order-1`}
+            className={`navbar-nav order-3 ${!openMenu && "hidden"
+              } w-full justify-center md:flex md:w-auto md:space-x-2 md:order-1`}
           >
             {navMenu.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
@@ -123,9 +122,8 @@ const Header = () => {
                     <Link
                       onClick={() => setOpenMenu(false)}
                       href={menu.url}
-                      className={`nav-link inline-block ${
-                        !menu.url.includes("/categories") && "text-dark"
-                      } ${router.asPath === menu.url && "nav-link-active"}`}
+                      className={`nav-link inline-block ${!menu.url.includes("/categories") && "text-dark"
+                        } ${router.asPath === menu.url && "nav-link-active"}`}
                     >
                       {menu.name}
                     </Link>

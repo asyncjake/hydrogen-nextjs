@@ -1,8 +1,8 @@
-import Pagination from "@components/Pagination";
-import config from "@config/config.json";
-import Post from "@layouts/components/Post";
-import { getSinglePage } from "@lib/contentParser";
-import { sortByDate } from "@lib/utils/sortFunctions";
+import Pagination from "@/layouts/components/Pagination";
+import config from "@/config/config.json";
+import Post from "@/layouts/components/Post";
+import { getSinglePage } from "@/lib/contentParser";
+import { sortByDate } from "@/lib/utils/sortFunctions";
 const { blog_folder } = config.settings;
 
 // blog pagination

@@ -1,7 +1,7 @@
-import config from "@config/config.json";
-import { plainify } from "@lib/utils/textConverter";
-import Footer from "@partials/Footer";
-import Header from "@partials/Header";
+import config from "@/config/config.json";
+import { plainify } from "@/lib/utils/textConverter";
+import Footer from "@/layouts/partials/Footer";
+import Header from "@/layouts/partials/Header";
 import { TaxonomySlugProvider } from "context/state";
 import Head from "next/head";
 import { useRouter } from "next/router";

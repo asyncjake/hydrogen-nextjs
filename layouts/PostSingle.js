@@ -1,9 +1,9 @@
 import config from "@config/config.json";
-import { dateFormat } from "@lib/utils/dateFormat";
-import { readingTime } from "@lib/utils/readingTime";
-import { similerItems } from "@lib/utils/similarItems";
-import { humanize, markdownify, slugify } from "@lib/utils/textConverter";
-import shortcodes from "@shortcodes/all";
+import { dateFormat } from "@/lib/utils/dateFormat";
+import { readingTime } from "@/lib/utils/readingTime";
+import { similerItems } from "@/lib/utils/similarItems";
+import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
+import shortcodes from "@/layouts/shortcodes/all";
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import Link from "next/link";

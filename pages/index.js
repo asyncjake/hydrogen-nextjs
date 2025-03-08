@@ -1,13 +1,13 @@
-import config from "@config/config.json";
-import social from "@config/social.json";
-import Base from "@layouts/Baseof";
-import ImageFallback from "@layouts/components/ImageFallback";
-import Pagination from "@layouts/components/Pagination";
-import Post from "@layouts/components/Post";
-import Social from "@layouts/components/Social";
-import { getSinglePage } from "@lib/contentParser";
-import { sortByDate } from "@lib/utils/sortFunctions";
-import { markdownify } from "@lib/utils/textConverter";
+import config from "@/config/config.json";
+import social from "@/config/social.json";
+import Base from "@/layouts/Baseof";
+import ImageFallback from "@/layouts/components/ImageFallback";
+import Pagination from "@/layouts/components/Pagination";
+import Post from "@/layouts/components/Post";
+import Social from "@/layouts/components/Social";
+import { getSinglePage } from "@/lib/contentParser";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import { markdownify } from "@/lib/utils/textConverter";
 const { blog_folder } = config.settings;
 
 const Home = ({ posts }) => {

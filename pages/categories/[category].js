@@ -1,10 +1,10 @@
-import config from "@config/config.json";
-import Base from "@layouts/Baseof";
-import Post from "@layouts/components/Post";
-import { getSinglePage } from "@lib/contentParser";
-import { getTaxonomy } from "@lib/taxonomyParser";
-import { sortByDate } from "@lib/utils/sortFunctions";
-import { slugify } from "@lib/utils/textConverter";
+import config from "@/config/config.json";
+import Base from "@/layouts/Baseof";
+import Post from "@/layouts/components/Post";
+import { getSinglePage } from "@/lib/contentParser";
+import { getTaxonomy } from "@/lib/taxonomyParser";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import { slugify } from "@/lib/utils/textConverter";
 
 const { blog_folder } = config.settings;
 
